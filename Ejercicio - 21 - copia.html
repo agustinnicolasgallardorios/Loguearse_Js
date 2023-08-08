@@ -1,0 +1,122 @@
+<html>
+
+<head>
+   <title> Loguearse </title>
+</head>
+
+<body>
+
+    <div class = "form">
+     <h1> Completa los datos </h1>
+     <div class="input">
+        <center><font face="Segoe UI"><font size="5px"><p> Usuario </p></font></center>
+        <input type="text" id="usern" class="box1">
+        <center><font face="Segoe UI"><font size="5px"><p> Contraseña </p></font></center>
+        <input type="password" id="pas" class="box2">
+     </div>
+     <button onclick="compDatos()" class="button"> Ingresar </button>
+
+
+    </div>
+
+
+
+</body>
+
+<script>
+
+
+    function compDatos(){
+
+        pas = document.getElementById("pas").value;
+        usern = document.getElementById("usern").value;
+
+        pasc = "lastito1234";
+        usernc = "agustin";
+
+        if (pas == pasc && usern == usernc){
+            alert("Los datos son validos :)");
+        } else {
+            alert("Datos invalidos, ingrese nuevamente");
+        }
+
+
+    }
+
+
+</script>
+
+<style>
+
+   .form{
+    margin-top: 170px;
+    margin-left: 500px;
+    width: 400px;
+    height: 450px;
+    background-color: azure;
+   }
+
+   .form h1{
+    position: absolute;
+    margin-left: 44px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+   .input{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 100px;
+   }
+
+   .box1{
+    background-color: rgba(255, 255, 0, 0.226);
+    border-color: rgb(20, 125, 196);
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 30px;
+    text-align: center;
+   }
+
+   .box1:hover{
+    background-color: yellow;
+    transition: 1s;
+   }
+
+   .box2{
+    background-color: rgba(255, 255, 0, 0.226);
+    border-color: rgb(20, 125, 196);
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 30px;
+    text-align: center;
+   }
+
+   .box2:hover{
+    background-color: yellow;
+    transition: 1s;
+   }
+
+   .button{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 380px;
+    background-color: rgb(255, 251, 0) ;
+    border-radius: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(77, 77, 77);
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+   }
+
+   .button:hover{
+    background-color: rgb(255, 255, 255) ;
+    transition: 0.2s;
+   }
+
+</style>
+
+</html>
+
